@@ -1,1 +1,491 @@
-Hello World
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Quotail | Options scanning and analysis</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/QTfavicon.png">
+
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/shop.style.css">
+
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+    <link rel="stylesheet" href="assets/css/headers/header-v3.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
+    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/theme-colors/teal.css">
+    <link rel="stylesheet" href="assets/css/pages/pricing/pricing.css">
+
+    <style>
+        .mobile-hero-banner {
+            position: absolute;
+            z-index:10;
+            max-width: 470px;
+            font-style: normal;
+            font-size: 32px;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased !important;
+            white-space: nowrap;
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+        .signup-btn{
+            background-color: #44BB37;
+            color:white;
+            font-weight:bold;
+            width:280px;
+            margin:10px 0 5px 0;
+            border-radius: 0;
+        }
+        .signup-btn:hover{
+            color: white;
+            padding-right: 30px;
+            -webkit-transition: padding: 1s;
+            transition: padding: 1s;
+        }
+        .mission-header {
+            text-align: left;
+            font-size: 24px;
+            line-height: 50px;
+            color: #555;
+            text-transform: uppercase;
+        }
+        .mission-description{
+            margin-top: 0;;
+            padding-left: 70px;
+        }
+        .main {
+            top: 20%;
+        }
+        .sub {
+            top: 55%;
+            font-size: 22px;
+        }
+        .right {
+            right: 0;
+            top: 10%;
+        }
+        .top-tagline{
+            padding: 10px 10px 6px 40px;
+            background-color:rgba(255, 255, 255, 0.8);
+        }
+        .bottom-tagline{
+            padding: 6px 10px 10px 60px;
+            position: relative;
+            top: 4px;
+            background-color:rgba(255, 255, 255, 0.8);
+        }
+        .text {
+            color:#141A1F; 
+            font-size: 24px;
+            padding: 10px 10px 10px 30px;
+            background-color:rgba(255, 255, 255, 0.8);
+        }
+        @media (max-width: 768px) {
+            .text{
+                font-size: 16px;
+            }
+            .mission-header {
+                font-size: 20px;
+            }
+            .mobile-hero-img {
+                opacity: 0.25 !important;
+            }
+            .sub {
+                font-size: 16px !important;
+            }
+            .sub a {
+                font-size: 13px !important;
+            }
+            .main {
+                top:10%;
+            }
+            .main span {
+                padding-left: 60px;
+            }
+            .top-tagline {
+                font-size: 24px;
+            }
+            .bottom-tagline{
+                font-size: 24px;
+                top: -6px;
+            }
+            .right {
+                bottom: 10%;
+            }
+            .service-info{
+                padding-top: 15px;
+            }
+            .signup-btn{
+                font-size: 16px;
+                padding: 10px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 600px) {
+            .mission-header {
+                font-size: 18px;
+            }
+            .top-tagline {
+                font-size: 18px;
+            }
+            .bottom-tagline{
+                font-size: 18px;
+                top: 7px;
+            }
+            .mobile-hero-img {
+                opacity: 0.20 !important;
+            }
+            .mobile-hero-banner {
+                font-size: 18px !important;
+                font-weight: 400 !important;
+            }
+            .main {
+                top:10%;
+            }
+            .main span {
+                padding-left: 30px;
+            }
+            .sub {
+                display: none;
+            }
+        }
+    </style>
+
+    <style>
+        #big-video {
+            position: relative;
+            background: #000;
+            overflow: hidden;
+            height: 1080px;
+        }
+
+        #big-video .video {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+
+        #big-video video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        #big-video .video-element {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+        }
+    </style>
+</head> 
+
+<body class="header-fixed">    
+
+<div class="wrapper">
+    <!--=== Header v3 ===-->    
+    <div class="header-v3 header-sticky" style="background-color:#ededed;border-bottom:1px solid #ccc;">
+        <div id="header"></div>
+    </div>
+    <!--=== End Header v3 ===-->
+    <!--=== Slider ===-->
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE -->
+                <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1100" data-title="Slide 1">
+
+                    <div class="mobile-hero-banner main">
+                        <span class="top-tagline"><em>The most advanced options trade</em></span><br>
+                        <span class="bottom-tagline"><em>scanning and analytics platform</em></span>
+                    </div>
+
+                    <div class="mobile-hero-banner sub">
+                        <span class="text">Learn more about our products:</span>
+                        <div class="btn-buy hidden-xs">
+                            <a style="color:white;font-weight:bold;width:280px;margin:10px 0 5px 0;" href="app" class="btn btn-info btn-u-lg"><i class="fa fa-desktop">
+                            </i> Web-based Trading App</a>
+                        </div>
+                        <div class="btn-buy visible-xs" style="margin-top:5px">
+                            <a style="color:white;font-size:10px;width:280px;margin-bottom:5px;" href="app" class="btn btn-info"><i class="fa fa-desktop">
+                            </i> Web-based Trading App</a>
+                        </div>
+                        <div class="btn-buy hidden-xs">
+                            <a style="color:white;font-weight:bold;width:280px;" href="data" class="btn btn-info btn-u-lg"><i class="fa fa-database">
+                            </i> API & Data Services</a>
+                        </div>
+                        <div class="btn-buy visible-xs" style="margin-top:5px">
+                            <a style="color:white;font-size:10px;width:280px;" href="data" class="btn btn-info"><i class="fa fa-database">
+                            </i> API & Data Services</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-hero-banner right">
+                        <div class="btn-buy hidden-xs">
+                            <a href="http://app.quotail.co/#/register" class="btn btn-u-lg  signup-btn"><i class="fa fa-arrow-left"></i>
+                                <span>Sign up for free now!</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <section id="big-video">
+                        <div class="video" data-src="assets/img/qtAppleDevices3.png" data-video="assets/video/demo2" data-placeholder="assets/video/demo2.png"></div>
+                    </section>
+                </li>
+                <!-- END SLIDE -->
+            </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+        </div>
+    </div>
+    <!--=== End Slider ===-->
+    <!--=== Vision and Mission Section  ===-->
+    <div class="service-info margin-bottom-60">
+        <div class="container">
+            <div class="visible-xs" style="text-align: center;">
+                <a href="http://app.quotail.co/#/register" class="btn btn-u-lg signup-btn">
+                    <span>Sign up for free now!</span>
+                </a>
+            </div>
+             <div class="title-v1">
+                <h1 style="font-size: 40px;font-style:normal;">Real-Time Options Insights</h1>
+                <h3>Generate trade ideas faster with Quotail. We deliver a personalized stream of interesting options trades based on your strategies and allow you to intuitively analyze historical options order flow.</h3>
+            </div>
+            <h2 style="border-bottom: 1px solid #049AAC; color: #444">Our Mission:</h2>
+            <div class="row">
+                <div>
+                    <div class="margin-bottom-30">
+                        <div class="info-description" style="display: inline-block;padding: 10px;">
+                        <div>
+                            <i class="service-info-icon rounded-x fa fa-user-plus"></i>
+                            <h3 class="mission-header">Level the Playing Field</h3>
+                        </div>
+                        <h4 class="mission-description">Professional traders and market makers consider this information to be invaluable. Get access to institutional level data and analytics so you can swim with the big fish.</h4>
+                        </div>
+                    </div>
+                    <div class="margin-bottom-30">
+                        <div class="info-description" style="display: inline-block;padding: 10px;">
+                            <div>
+                                <i class="service-info-icon rounded-x fa fa-database"></i>
+                                <h3 class="mission-header">Quickly Uncover Ideas</h3>
+                            </div>
+                            <h4 class="mission-description">
+                                Options are a fast-paced game. Reading the time and sales can be laborious, but we built our suite of discovery tools to help you find the right ideas as soon as they happen.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="margin-bottom-30">
+                        <div class="info-description" style="display: inline-block;padding: 10px;">
+                            <div>
+                                <i class="service-info-icon rounded-x fa fa-line-chart"></i>
+                                <h3 class="mission-header">Monitor Your Portfolio</h3>
+                            </div>
+                            <h4 class="mission-description">
+                            Knowing when to get out is just as important as knowing when to get in. Get alerts on order flow affecting your portfolio so you're not the last one holding when the music stops.</h4>
+                        </div>
+                    </div>   
+                </div>
+   
+            </div><!--/row-->
+        </div><!--/container-->
+    </div>
+    <!--===  End of Vision and Mission Section ===-->
+
+    <!-- Product Offerings Section -->
+    <section id="services" style="padding-top:0px;background:#ffffff;">
+        <div class="container content-lg" style="padding-top:0px;">
+            <div class="title-v1">
+                <h2>Product Offerings</h2>    
+            </div>            
+            
+            <a href="app">
+                <div class="row service-box-v1">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block service-block-default pricing">
+                            <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-desktop"></i>
+                            <h2 class="heading-md">Web &amp; Mobile App</h2>
+                            <div class="sticker-right" style="text-">Beta</div>
+                            <p style="font-size:14px">Full access to our web and mobile applications.</p>
+                            <ul class="list-unstyled">
+                                <li>Run custom and preset scans</li>
+                                <li>Visualize aggregate order flow</li>
+                                <li>Analyze historical options activity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="data">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block service-block-default pricing">
+                            <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line fa fa-database"></i>
+                            <h2 class="heading-md">API & Data Services</h2>
+                            <p style="font-size:14px">Integrate our trade data with your product using our REST API or get a flat file</p>
+                            <ul class="list-unstyled">
+                                <li>Raw Trade Data</li>
+                                <li>Enriched Trade Data</li>
+                                <li>Options Chains Data</li>
+                            </ul>                        
+                        </div>
+                    </div>
+                </a>
+                <div class="col-md-4 col-sm-12" style="background:#fff">
+                    <div class="service-block service-block-default pricing">            
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line fa fa-wrench"></i>
+                        <h2 class="heading-md">Quotail Services</h2>
+                         <div class="sticker-right" style="text-">Coming Soon</div>
+
+                        <p style="font-size:14px">Want a custom solution for your business? We can build it.</p>
+                        <ul class="list-unstyled">
+                            <li>Custom Tools</li>
+                            <li>Custom API Solutions</li>
+                            <li>White-label Solutions</li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+                   
+    </section>
+    <!-- End Services Section -->
+    
+
+    <!--=== Owl Carousel v6 ===-->
+    <div class="container" style="padding-top:50px;background:#f7f7f7;width:100%;">
+         <div class="title-v1">
+                <h2>Our Partners</h2>
+                <p>Quotail has a strong position in the finance community with incredible partners and data providers.</p>
+        </div>
+        <ul class="list-inline owl-carousel-v6 owl-slider-v6 margin-bottom-50">
+            <li class="owl-carousel-item" style="margin-top:15px">
+                <img src="assets/img/logo-fintech-sandbox.png" alt="">
+            </li>
+            <li class="owl-carousel-item"style="margin-top:15px">
+                <img src="assets/img/xignite.png" alt="">
+            </li>
+            <li class="owl-carousel-item">
+                <img src="assets/img/tradier.png" alt="">
+            </li>
+            <li class="owl-carousel-item">
+                <img src="assets/img/dxfeed.png" alt="">
+            </li>
+            <li class="owl-carousel-item" style="margin-top:5px">
+                <img src="assets/img/opra.png" alt="">
+            </li>
+        </ul>
+    </div><!--/container-->
+    <!--=== End Owl Carousel v6 ===-->
+
+  <div id="footer"></div>
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
+<script type="text/javascript" src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<!-- JS Customization -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/plugins/fancy-box.js"></script>
+<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
+<script type="text/javascript" src="assets/js/plugins/revolution-slider.js"></script>
+<script type="text/javascript" src="assets/js/plugins/pace-loader.js"></script>
+<script type="text/javascript" src="assets/js/load_header_footer.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initParallaxBg();
+        FancyBox.initFancybox();
+        OwlCarousel.initOwlCarousel();
+        RevolutionSlider.initRSfullWidth();
+    });
+</script>
+ <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59206446-1', 'auto');
+      ga('send', 'pageview');
+
+ </script>
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    function isIE () {
+        var myNav = navigator.userAgent.toLowerCase();
+        return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+    }
+
+    window.isIEOld = isIE() && isIE() < 9;
+    window.isiPad = navigator.userAgent.match(/iPad/i);
+
+    var img = $('.video').data('placeholder'),
+        video = $('.video').data('video'),
+        noVideo = $('.video').data('src'),
+        el = '';
+
+    if($(window).width() > 599 && !isIEOld && !isiPad) {
+        el +=   '<video autoplay loop poster="' + img + '">';
+        el +=       '<source src="' + video + '.webm" type="video/webm">';
+        el +=       '<source src="' + video + '.mp4" type="video/mp4">';
+        el +=   '</video>';
+    } else {
+        el = '<div class="video-element mobile-hero-img" style="background-image: url(' + noVideo + ')"></div>';
+    }
+
+    $('.video').prepend(el);
+</script>
+
+</body>
+</html>
